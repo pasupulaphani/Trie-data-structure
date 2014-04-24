@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace BookParser_Trie.tests
+namespace BookParser_hash.tests
 {
     [TestFixture]
     class TestReadFile
@@ -63,7 +63,7 @@ namespace BookParser_Trie.tests
         [Test]
         public void TestGetWordswithmorePunctuation()
         {
-            string[] actual = ReadFile.GetWords("word1  word2+word1,:*;");
+            string[] actual = ReadFile.GetWords("word1 word2+word1,:*;");
             string[] expected = { "word1", "word2", "word1" };
 
             Assert.AreEqual(expected, actual,

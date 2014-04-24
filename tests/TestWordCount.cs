@@ -6,7 +6,7 @@ using NUnit.Framework;
 using System.IO;
 using System.Reflection;
 
-namespace BookParser_Trie.tests
+namespace BookParser_hash.tests
 {
 
     [TestFixture]
@@ -15,7 +15,7 @@ namespace BookParser_Trie.tests
         [Test]
         public void TestCount1()
         {
-            WordCount word_counter = new WordCount(getFileReader("word1count1.txt"), getTrie());
+            WordCount word_counter = new WordCount(getFileReader("word1count1.txt"), getDict());
             word_counter.count();
 
             int actual = (word_counter.getDict())["word1"];
@@ -28,7 +28,7 @@ namespace BookParser_Trie.tests
         [Test]
         public void TestCount2()
         {
-            WordCount word_counter = new WordCount(getFileReader("word1count2.txt"), getTrie());
+            WordCount word_counter = new WordCount(getFileReader("word1count2.txt"), getDict());
             word_counter.count();
 
             int actual = (word_counter.getDict())["word1"];
@@ -42,7 +42,7 @@ namespace BookParser_Trie.tests
         [ExpectedException(typeof(KeyNotFoundException))]
         public void TestWordNotFound()
         {
-            WordCount word_counter = new WordCount(getFileReader("word1count1.txt"), getTrie());
+            WordCount word_counter = new WordCount(getFileReader("word1count1.txt"), getDict());
             word_counter.count();
 
             int count = (word_counter.getDict())["word3"];
@@ -59,9 +59,9 @@ namespace BookParser_Trie.tests
             return file_reader;
         }
 
-        private static Trie getTrie()
+        private static Dict getDict()
         {
-            Trie dt = new Trie();
+            Dict dt = new Dict();
             return dt;
         }
 

@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace BookParser_Trie
+namespace BookParser_hash
 {
     class ReadFile
     {

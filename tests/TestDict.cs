@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace BookParser_Trie.tests
+namespace BookParser_hash.tests
 {
     [TestFixture]
-    class TestTrie
+    class TestDict
     {
         [Test]
         public void TestAddNewItem()
         {
-            Trie trie = new Trie();
+            Dict dict = new Dict();
             
-            int actual = trie.add("test");
+            int actual = dict.add("test");
             int expected = 1;
 
             Assert.AreEqual(expected, actual,
@@ -24,10 +24,10 @@ namespace BookParser_Trie.tests
         [Test]
         public void TestAddExitingItem()
         {
-            Trie trie = new Trie();
-            trie.add("test");
+            Dict dict = new Dict();
+            dict.add("test");
 
-            int actual = trie.add("test");
+            int actual = dict.add("test");
             int expected = 2;
 
             Assert.AreEqual(expected, actual,

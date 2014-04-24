@@ -1,0 +1,7 @@
+C:\Users\IEUser\Documents\Visual Studio 2010\Projects\BookParser\BookParser\bin\Debug\BookParser.exe
+C:\Users\IEUser\Documents\Visual Studio 2010\Projects\BookParser\BookParser\bin\Debug\BookParser.pdb
+C:\Users\IEUser\Documents\Visual Studio 2010\Projects\BookParser\BookParser\bin\Debug\nunit.framework.dll
+C:\Users\IEUser\Documents\Visual Studio 2010\Projects\BookParser\BookParser\bin\Debug\nunit.framework.xml
+C:\Users\IEUser\Documents\Visual Studio 2010\Projects\BookParser\BookParser\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\IEUser\Documents\Visual Studio 2010\Projects\BookParser\BookParser\obj\x86\Debug\BookParser.exe
+C:\Users\IEUser\Documents\Visual Studio 2010\Projects\BookParser\BookParser\obj\x86\Debug\BookParser.pdb

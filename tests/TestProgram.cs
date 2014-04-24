@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace BookParser_Trie.tests
+namespace BookParser_hash.tests
 {
     [TestFixture]
     class TestProgram

@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace BookParser_Trie
+namespace BookParser_hash
 {
     class Program
     {
@@ -29,8 +29,8 @@ namespace BookParser_Trie
         public static void ParseFile(string file_loc)
         {
             ReadFile file_reader = new ReadFile(file_loc);
-            Trie trie = new Trie();
-            WordCount word_counter = new WordCount(file_reader, trie);
+            Dict dt = new Dict();
+            WordCount word_counter = new WordCount(file_reader, dt);
             word_counter.count();
 
             Console.WriteLine("Count : isPrime  :  Word");
