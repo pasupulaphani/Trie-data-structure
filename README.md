@@ -4,7 +4,7 @@ Thanks to scripting languages, now we use Hashes as granted. Hashes are very use
 
 ### Lets code a book parser: ###
 
-Branch : [master](https://bitbucket.org/ppasupula/coding-a-trie-book-parsing-algorithm/branch/hash_table)
+Branch : [master](https://github.com/pasupulaphani/Coding-a-Trie_Book-Parsing-Algorithm)
 
 In our case we could do better things if we could use a data structure suitable for parsing. First thing comes to mind is awesome BST. But with our data tree becomes very imbalanced and depth could increase easily. Also thought of using 26 BSTs where each root is a character (ignoring numbers and special chars). Though look-ups are faster, this could work well but it still has implementation complexity and insertions and deletions of words can be expensive.
 
@@ -28,7 +28,7 @@ In the end, I used Tries. This a very simple data structure. look-up, insertions
 
 ### Using hash table: ###
 
-Branch : [hash_table](https://bitbucket.org/ppasupula/coding-a-trie-book-parsing-algorithm/branch/master)
+Branch : [hash_table](https://github.com/pasupulaphani/Coding-a-Trie_Book-Parsing-Algorithm/tree/hash_table)
 
 ### Advantages: ###
 
