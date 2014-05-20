@@ -2,7 +2,7 @@
 
 Thanks to scripting languages, now we use Hashes as granted. Hashes are very useful but it is important to know the purpose and the area of usage.
 
-### Lets code a book parser: ### 
+### Lets code a book parser: ###
 
 Branch : [master](https://bitbucket.org/ppasupula/coding-a-trie-book-parsing-algorithm/branch/hash_table)
 
